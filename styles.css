@@ -5,6 +5,7 @@
   --muted: #a8b3c7;
   --accent: #5eead4;
   --line: #334155;
+  --title:#baf3ff; 
 }
 
 * { box-sizing: border-box; }
@@ -30,16 +31,24 @@ body {
 }
 .table-scroll { overflow-x: auto; }
 
+.instruction{
+   font-size: 20px;
+   color: var(--title);
+   padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 .command-table {
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   border-collapse: collapse;
   background: var(--surface);
 }
 
 .command-table caption {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .command-table th,
@@ -56,18 +65,24 @@ body {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
-}
-header, main, footer {
-    .topic-list {
+} 
+.topic-list {
   display: grid;
   gap: 12px;
   padding: 0;
   list-style: none;
 }
-
+header, main {
+   
   width: min(100% - 32px, 960px);
   margin-inline: auto;
 }
+footer {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px; 
+}
+
 
 a { color: var(--accent); }
 
